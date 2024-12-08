@@ -7,8 +7,9 @@ import { Input } from "@/components/ui/input"
 import Footer from "@/components/footer";
 import Topbar from "@/components/topbar";
 import Hero from "@/components/hero";
-import Navbar from "@/components/navbar";
+
 import About from "./about/page";
+import ShoppingCart from "./shopping cart/page";
 
 export default function Home() {
   return (
@@ -36,6 +37,7 @@ export default function Home() {
       <Footer />
       <Chair />
       <About/>
+      <ShoppingCart/>
 
     </>
   )

@@ -62,7 +62,7 @@ export default function About() {
             {/* 2nd part */}
              {/* hero-section */}
              <div className="flex flex-col lg:flex-row lg:justify-between lg:ml-20">
-            <div className="flex justify-center mt-6 lg:mt-0">
+            <div className="flex justify-center mt-6 lg:mt-0 ">
                     <Image src={"/Image (1).png"} alt="right-img" width={600} height={600} />
                 </div>
                 {/* content right section */}
