@@ -1,20 +1,31 @@
 import Link from "next/link";
 
-export default function Navbar(){
-    return(
-        <>
-        <div className="flex justify-center items--center p-4 ">
-            <ul className="flex gap-6 text-center text-gray-400">
-                <Link href={"/"}>Plant pots</Link>
-                <Link href={"/"}>Ceramics</Link>
-                <Link href={"/"}>Tables</Link>
-                <Link href={"/"}>Chairs</Link>
-                <Link href={"/"}>Crockery</Link>
-                <Link href={"/"}>Tableware</Link>
-                <Link href={"/"}>Cultery</Link>
+export default function Navbar({ vertical = false }) {
+    return (
+        <div className={`p-4 ${vertical ? "flex flex-col gap-4" : "flex justify-center items-center"}`}>
+            <ul className={`flex ${vertical ? "flex-col" : "gap-6"} text-center text-gray-400`}>
+                <li>
+                    <Link href={"/"}>Plant pots</Link>
+                </li>
+                <li>
+                    <Link href={"/"}>Ceramics</Link>
+                </li>
+                <li>
+                    <Link href={"/"}>Tables</Link>
+                </li>
+                <li>
+                    <Link href={"/"}>Chairs</Link>
+                </li>
+                <li>
+                    <Link href={"/"}>Crockery</Link>
+                </li>
+                <li>
+                    <Link href={"/"}>Tableware</Link>
+                </li>
+                <li>
+                    <Link href={"/"}>Cutlery</Link>
+                </li>
             </ul>
         </div>
-        
-        </>
-    )
+    );
 }

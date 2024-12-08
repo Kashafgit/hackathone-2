@@ -4,8 +4,8 @@ export default function Products(){
     return(
         <>
         <div className="px-20 py-2">
-            <h1 className="text-gray-500 text-2xl">Our Popular Products</h1>
-            <div className="flex justify-center gap-5 py-5">
+            <h1 className="text-left text-gray-500 md:text-2xl">Our Popular Products</h1>
+            <div className="flex flex-col md:flex-row justify-center gap-5 py-5">
                 <div>
                     <Image src={"/Large.png"} alt="large-sofa" width={620} height={190} />
                     <div className="text-gray-600">
